@@ -1,0 +1,89 @@
+* {
+    box-sizing: border-box; 
+    font-family: "Trirong", serif;
+    background-color: azure;
+}
+
+.my-form {
+    width: 1200px; 
+    height: 500px; 
+    
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);  
+    margin: auto; 
+    display: flex; 
+    justify-content: space-between; 
+    flex-basis: 30%; 
+}
+.my-form__content {
+    flex: 1; 
+   
+    margin: 15px;
+    display: flex; 
+    flex-direction: column; 
+}
+.my-form__img
+{
+    flex: 1.2; 
+    background-color:cadetblue; 
+    transition: opacity 0.3s linear;  
+}
+.my-form__img--sakura {
+    background-image: url(https://spacet-release.s3.ap-southeast-1.amazonaws.com/img/blog/2023-10-03/ve-dep-ngat-ngay-cua-hoa-dao-ngay-tet-651bcf41c9649b0ef5aa9823.webp);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+.my-form__img--sky {
+    background-image: url(https://community.windy.com/assets/uploads/files/1550847256383-cloud-cumulus-palms.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+.my-form__img--green {
+    background-image: url(https://images.squarespace-cdn.com/content/v1/61c4da8eb1b30a201b9669f2/e2e0e62f-0064-4f86-b9d8-5a55cb7110ca/Korembi-January-2024.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; 
+}
+p {
+    margin: 0;
+    font-size: 15px; 
+    text-align: left; 
+    color: #697565; 
+}
+
+.my-form__para {
+    flex: 1; 
+    min-height: 100px; 
+    padding-top: 8px; 
+    display: flex;
+    flex-direction: column;
+}
+#heading {
+    margin: 8px 0;
+    font-size: 28px; 
+    font-weight: 100; 
+}
+#author {
+    margin-bottom: 12px; 
+} 
+button {
+    display: inline; 
+    text-align: left; 
+    height: 40px; 
+    align-self: flex-start;
+    margin-top: 15px; 
+    font-size: 15px; 
+    outline: none; 
+    background-color: transparent; 
+    border: 2px solid; 
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;  
+}
+button:hover {
+    background-color: #333;
+    color: #fff; 
+}
+.my-form__img:hover {
+    opacity: 0.7; 
+    cursor:grab; 
+}
